@@ -10,14 +10,24 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-PWA-Test/sw.js", {
-    scope: "/ICS2O-PWA-Test/",
+  navigator.serviceWorker.register("/ICS2O-Unit3-01-HTML/sw.js", {
+    scope: "/ICS2O-Unit3-01-HTML/",
   })
 }
 
-/**
- * This function displays an alert.
- */
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+"use strict"
+
+function addAgeClicked () {
+  // this function does area of a trapizoid
+
+  // input
+  const aBase = parseInt(document.getElementById("a-base-dimension").value)
+  const bBase = parseInt(document.getElementById("b-base-dimension").value)
+  const height = parseInt(document.getElementById("height-dimension").value)
+
+  // process
+  const area = ((aBase + bBase) / 2) * height
+
+  // output
+  document.getElementById('area').innerHTML = 'Area is: ' + area + ' mm²'
 }
