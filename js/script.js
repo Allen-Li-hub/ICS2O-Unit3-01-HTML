@@ -15,9 +15,9 @@ if (navigator.serviceWorker) {
   })
 }
 
-"use strict"
+;("use strict")
 
-function addAgeClicked () {
+function addAgeClicked() {
   // this function does area of a trapizoid
 
   // input
@@ -29,5 +29,5 @@ function addAgeClicked () {
   const area = ((aBase + bBase) / 2) * height
 
   // output
-  document.getElementById('area').innerHTML = 'Area is: ' + area + ' mm²'
+  document.getElementById("area").innerHTML = "Area is: " + area + " mm²"
 }
