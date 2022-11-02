@@ -21,9 +21,9 @@ function addAgeClicked() {
   // this function does area of a trapizoid
 
   // input
-  const aBase = parseInt(document.getElementById("a-base-dimension").value)
-  const bBase = parseInt(document.getElementById("b-base-dimension").value)
-  const height = parseInt(document.getElementById("height-dimension").value)
+  const aBase = parseInt(document.getElementById("a-base-of-trapzoid").value)
+  const bBase = parseInt(document.getElementById("b-base-of-trapzoid").value)
+  const height = parseInt(document.getElementById("height-of-trapzoid").value)
 
   // process
   const area = ((aBase + bBase) / 2) * height
